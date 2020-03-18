@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JasonStathamPhrases" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="hL2-Mj-se0">
+                                <rect key="frame" x="57" y="342" width="300" height="98"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Phrase">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name=".SFNS-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Statham" translatesAutoresizingMaskIntoConstraints="NO" id="Whf-D5-lf5">
+                                <rect key="frame" x="133" y="109" width="149" height="178.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" © Джейсон Стетхем" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XAp-fs-4m4">
+                                <rect key="frame" x="57" y="507" width="300" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajr-nw-CSK">
+                                <rect key="frame" x="141" y="617" width="132" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Ещё"/>
+                                <connections>
+                                    <action selector="updatePhrase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ye-xt-DV0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Whf-D5-lf5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="5Ed-Ii-VdO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ajr-nw-CSK" secondAttribute="trailing" constant="141" id="6me-bI-yN8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Whf-D5-lf5" secondAttribute="trailing" constant="132" id="LuB-Tv-0nT"/>
+                            <constraint firstItem="ajr-nw-CSK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="S5i-t6-8ES"/>
+                            <constraint firstItem="XAp-fs-4m4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="Wpg-Q4-3ZT"/>
+                            <constraint firstItem="hL2-Mj-se0" firstAttribute="top" secondItem="Whf-D5-lf5" secondAttribute="bottom" constant="54.5" id="Z08-WO-inT"/>
+                            <constraint firstItem="hL2-Mj-se0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="Zoh-VW-FOg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XAp-fs-4m4" secondAttribute="trailing" constant="57" id="dnd-zx-5S7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hL2-Mj-se0" secondAttribute="trailing" constant="57" id="jqD-tc-qrO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ajr-nw-CSK" secondAttribute="bottom" constant="184" id="kcV-Lg-9z2"/>
+                            <constraint firstItem="Whf-D5-lf5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="mIM-Bk-w0j"/>
+                            <constraint firstItem="ajr-nw-CSK" firstAttribute="top" secondItem="XAp-fs-4m4" secondAttribute="bottom" constant="50" id="n0W-66-FiF"/>
+                            <constraint firstItem="XAp-fs-4m4" firstAttribute="top" secondItem="hL2-Mj-se0" secondAttribute="bottom" constant="67" id="ueU-sa-GM7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Whf-D5-lf5" id="mTY-oH-6hO"/>
+                        <outlet property="phraseLabel" destination="hL2-Mj-se0" id="hdU-9H-8Ul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Statham" width="149" height="178.5"/>
+    </resources>
+</document>
